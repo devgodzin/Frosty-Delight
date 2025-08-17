@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:leather_boots"
+    },
+    "title": {
+      "translate": "advancement.frosty_delight.uncommon_mistake.title"
+    },
+    "description": {
+      "translate": "advancement.frosty_delight.uncommon_mistake.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "enchant_leather_boots": {
+      "trigger": "minecraft:enchanted_item",
+      "conditions": {
+        "item": {
+          "item": "minecraft:leather_boots",
+          "enchantments": [
+            {
+              "enchantment": "frosty_delight:snow_walking",
+              "levels": {
+                "min": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["enchant_leather_boots"]
+  ]
+}
