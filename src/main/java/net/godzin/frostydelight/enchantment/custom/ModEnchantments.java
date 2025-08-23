@@ -9,10 +9,13 @@ import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentEffectComponents;
+
 
 public class ModEnchantments {
     public static final ResourceKey<Enchantment> SNOW_WALKING = ResourceKey.create(Registries.ENCHANTMENT,
@@ -30,10 +33,11 @@ public class ModEnchantments {
                                 1,
                                 Enchantment.dynamicCost(17, 7),
                                 Enchantment.dynamicCost(37, 7),
-                                3,
+                                8,
                                 EquipmentSlotGroup.FEET
                         )
-                ).withEffect(
+                )
+                .withEffect(
                         EnchantmentEffectComponents.TICK,
                         new SnowWalkingEnchantmentEffects()
                 )
@@ -53,5 +57,4 @@ public class ModEnchantments {
 
         return stack.getEnchantmentLevel(snowWalking) > 0;
     }
-
 }

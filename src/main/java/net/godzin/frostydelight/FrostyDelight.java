@@ -1,5 +1,6 @@
 package net.godzin.frostydelight;
 
+import net.godzin.frostydelight.effect.ModEffects;
 import net.godzin.frostydelight.enchantment.custom.ModEnchantmentEffects;
 import org.slf4j.Logger;
 
@@ -35,6 +36,7 @@ public class FrostyDelight {
         NeoForge.EVENT_BUS.register(this);
 
         ModEnchantmentEffects.register(modEventBus);
+        ModEffects.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

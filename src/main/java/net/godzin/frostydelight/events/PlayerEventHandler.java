@@ -1,4 +1,4 @@
-package net.godzin.frostydelight.data.events;
+package net.godzin.frostydelight.events;
 
 import net.godzin.frostydelight.FrostyDelight;
 import net.godzin.frostydelight.enchantment.custom.ModEnchantments;
@@ -12,7 +12,6 @@ import net.minecraft.world.item.enchantment.ItemEnchantments;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
-import net.minecraft.world.entity.LivingEntity;
 
 @EventBusSubscriber(modid = FrostyDelight.MOD_ID)
 public class PlayerEventHandler {
