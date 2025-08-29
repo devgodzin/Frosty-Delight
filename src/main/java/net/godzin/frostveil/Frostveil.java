@@ -4,8 +4,6 @@ import net.godzin.frostveil.effect.ModEffects;
 import net.godzin.frostveil.enchantment.custom.ModEnchantmentEffects;
 import net.godzin.frostveil.item.ModItems;
 import net.godzin.frostveil.potion.ModPotions;
-import net.godzin.frostveil.worldgen.biome.ModTerrablender;
-import net.godzin.frostveil.worldgen.biome.surface.ModSurfaceRules;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -20,7 +18,6 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(Frostveil.MOD_ID)
@@ -45,7 +42,6 @@ public class Frostveil {
         ModEnchantmentEffects.register(modEventBus);
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
-        //ModTerrablender.registerBiomes();
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -55,6 +51,8 @@ public class Frostveil {
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+        });
     }
 
     // Add the example block item to the building blocks tab

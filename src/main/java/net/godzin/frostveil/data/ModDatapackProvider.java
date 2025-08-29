@@ -5,7 +5,6 @@ import net.godzin.frostveil.enchantment.custom.ModEnchantments;
 import net.godzin.frostveil.worldgen.ModBiomeModifiers;
 import net.godzin.frostveil.worldgen.ModConfiguredFeatures;
 import net.godzin.frostveil.worldgen.ModPlacedFeatures;
-import net.godzin.frostveil.worldgen.biome.ModBiomes;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -22,8 +21,7 @@ public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
 
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
-            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap)
-            .add(Registries.BIOME, ModBiomes::bootstrap);
+            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
 
 
     public ModDatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
