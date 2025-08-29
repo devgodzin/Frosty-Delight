@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:leather_boots",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.frostveil.uncommon_mistake.title"
+    },
+    "description": {
+      "translate": "advancements.frostveil.uncommon_mistake.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "have_snow_walking_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "leather_boots",
+            "components": {
+              "minecraft:enchantments": {
+                "levels": {
+                  "frostveil:snow_walking": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "have_snow_walking_boots"
+    ]
+  ],
+  "rewards": {
+    "experience": 150
+  },
+  "sends_telemetry_event": true
+}

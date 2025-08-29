@@ -1,0 +1,22 @@
+{
+  "enchantment.frostveil.snow_walking": "Snow Walking",
+
+
+  "advancements.frostveil.uncommon_mistake.title": "Uncommon Mistake...",
+  "advancements.frostveil.uncommon_mistake.description": "Enchanting leather boots with Snow Walking? Really?",
+
+
+  "effect.frostveil.frost_bite": "Frost Bite",
+
+
+  "item.frostveil.frozen_heart": "Frozen Heart",
+
+  "item.minecraft.potion.effect.frost_bite_potion": "Frost Bite Potion",
+  "item.minecraft.splash_potion.effect.frost_bite_potion": "Frost Bite Splash Potion",
+  "item.minecraft.lingering_potion.effect.frost_bite_potion": "Frost Bite Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.frost_bite_potion": "Arrow of Frost Bite",
+  "item.minecraft.potion.effect.frost_bite_potion_ii": "Frost Bite Potion II",
+  "item.minecraft.splash_potion.effect.frost_bite_potion_ii": "Frost Bite Splash Potion II",
+  "item.minecraft.lingering_potion.effect.frost_bite_potion_ii": "Frost Bite Lingering Potion II",
+  "item.minecraft.tipped_arrow.effect.frost_bite_potion_ii": "Arrow of Frost Bite II"
+}

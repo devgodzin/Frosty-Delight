@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "net.godzin.frostveil.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "SnowWalkingMixin"
+  ],
+  "client": [
+
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
